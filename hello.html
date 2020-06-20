@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom//umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="demoReact"></div>
+    <script type="text/babel">
+        let text = "你好"
+        let num = 333
+        let user={
+            name:"sss",
+            age:19
+        }
+        function fun(obj) {
+            return `姓名是${obj.name}----年龄是${obj.age}`
+        }
+
+        let myDom = (
+            <div>
+                <div>{text}</div>
+                <div>{num}</div>
+                {/*计算*/}
+                <div>{num + 1}</div>
+                <div>{fun(user)}</div>
+            </div>
+        )
+        ReactDOM.render(myDom, document.getElementById("demoReact"));
+    </script>
+</body>
+
+</html>
