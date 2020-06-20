@@ -1,0 +1,13 @@
+.rej
+*.rej
+*.orig
+bin/
+dist/
+node_modules/
+temp/
+versions/
+*.zip
+/bin
+docs/.vuepress/dist/
+yarn.lock
+yarn-error.log
